@@ -62,7 +62,15 @@ BufMgr::~BufMgr() {
     delete [] bufPool;
 }
 
+// Allocate a free frame using clock algorithm
+// If necessary, write dirty page back to disk.
 
+// Return BUFFEXCEEDED if all frames are pinned
+// Return UNIXERR if call to I/O return err when dirty page is being written to disk
+
+// Return OK otehrwise.
+
+// Called by readPage() and allocPage()
 const Status BufMgr::allocBuf(int & frame) 
 {
 
@@ -73,10 +81,25 @@ const Status BufMgr::allocBuf(int & frame)
 
 }
 
-	
+// Same errors as allocBuf()
 const Status BufMgr::readPage(File* file, const int PageNo, Page*& page)
 {
+// Check if page in buffer pool using lookup() on hashtable
 
+/*
+Page not in pool:
+	1: Call allocBuf(), then call readPage()
+	2: Insert page to hashtable
+	3. Call Set() on frame
+	4. Return pointer to frame w/ page
+*/
+
+/*
+Page in pool:
+	1. Set refbit
+	2. pinCnt++
+	3. Return pointer to frame w/ page
+*/
 
 
 
@@ -87,7 +110,11 @@ const Status BufMgr::readPage(File* file, const int PageNo, Page*& page)
 const Status BufMgr::unPinPage(File* file, const int PageNo, 
 			       const bool dirty) 
 {
+	// Decrement pinCnt of frame w/ (file, PageNo)
+	// If dirty == true, set dirty bit
 
+	// Return HASHNOTFOUND if page no in buffer pool hash table
+	// Return PAGENOTPINNED if pinCnt is already 0
 
 
 
@@ -96,7 +123,13 @@ const Status BufMgr::unPinPage(File* file, const int PageNo,
 
 const Status BufMgr::allocPage(File* file, int& pageNo, Page*& page) 
 {
+	// 1. Allocate empty page in specifed file using allocatePage()
+	// 2. Call allocBuf() to get a buffer pool frame
+	// 3. Entry inserted into hash table and call Set()
 
+	// Return UNIXERR if Unix error
+	// Return BUFFEREXCEEDED if all frames are pinned
+	// Return HASHTABLERROR if hash table error occurred
 
 
 
