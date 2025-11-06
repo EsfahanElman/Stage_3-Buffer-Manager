@@ -1,0 +1,252 @@
+Allocating pages in a file...
+Test passed
+
+Reading pages back...
+Test passed
+
+Writing and reading back multiple files...
+Expected Result: The output will consist of the file name, page number, and a value.
+The page number and the value should match.
+
+test.1 Page 84    84.0
+test.1 Page 87    87.0
+test.1 Page 78    78.0
+test.1 Page 16    16.0
+test.1 Page 94    94.0
+test.1 Page 36    36.0
+test.1 Page 87    87.0
+test.1 Page 93    93.0
+test.1 Page 50    50.0
+test.1 Page 22    22.0
+test.1 Page 63    63.0
+test.1 Page 28    28.0
+test.1 Page 91    91.0
+test.1 Page 60    60.0
+test.1 Page 64    64.0
+test.1 Page 27    27.0
+test.1 Page 41    41.0
+test.1 Page 27    27.0
+test.1 Page 73    73.0
+test.1 Page 37    37.0
+test.1 Page 12    12.0
+test.1 Page 69    69.0
+test.1 Page 68    68.0
+test.1 Page 30    30.0
+test.1 Page 83    83.0
+test.1 Page 31    31.0
+test.1 Page 63    63.0
+test.1 Page 24    24.0
+test.1 Page 68    68.0
+test.1 Page 36    36.0
+test.1 Page 30    30.0
+test.1 Page 3     3.0
+test.1 Page 23    23.0
+Test passed
+
+
+Reading "test.1"...
+Expected Result: Pages in order.  Values matching page number.
+
+Test passed
+
+
+Reading "test.2"...
+Expected Result: Pages in order.  Values matching page number.
+
+test.2 Page 1     1.0
+test.2 Page 2     2.0
+test.2 Page 3     3.0
+test.2 Page 4     4.0
+test.2 Page 5     5.0
+test.2 Page 6     6.0
+test.2 Page 7     7.0
+test.2 Page 8     8.0
+test.2 Page 9     9.0
+test.2 Page 10    10.0
+test.2 Page 11    11.0
+test.2 Page 12    12.0
+test.2 Page 13    13.0
+test.2 Page 14    14.0
+test.2 Page 15    15.0
+test.2 Page 16    16.0
+test.2 Page 17    17.0
+test.2 Page 18    18.0
+test.2 Page 19    19.0
+test.2 Page 20    20.0
+test.2 Page 21    21.0
+test.2 Page 22    22.0
+test.2 Page 23    23.0
+test.2 Page 24    24.0
+test.2 Page 25    25.0
+test.2 Page 26    26.0
+test.2 Page 27    27.0
+test.2 Page 28    28.0
+test.2 Page 29    29.0
+test.2 Page 30    30.0
+test.2 Page 31    31.0
+test.2 Page 32    32.0
+Test passed
+
+
+Reading "test.3"...
+Expected Result: Pages in order.  Values matching page number.
+
+test.3 Page 1     1.0
+test.3 Page 2     2.0
+test.3 Page 3     3.0
+test.3 Page 4     4.0
+test.3 Page 5     5.0
+test.3 Page 6     6.0
+test.3 Page 7     7.0
+test.3 Page 8     8.0
+test.3 Page 9     9.0
+test.3 Page 10    10.0
+test.3 Page 11    11.0
+test.3 Page 12    12.0
+test.3 Page 13    13.0
+test.3 Page 14    14.0
+test.3 Page 15    15.0
+test.3 Page 16    16.0
+test.3 Page 17    17.0
+test.3 Page 18    18.0
+test.3 Page 19    19.0
+test.3 Page 20    20.0
+test.3 Page 21    21.0
+test.3 Page 22    22.0
+test.3 Page 23    23.0
+test.3 Page 24    24.0
+test.3 Page 25    25.0
+test.3 Page 26    26.0
+test.3 Page 27    27.0
+test.3 Page 28    28.0
+test.3 Page 29    29.0
+test.3 Page 30    30.0
+test.3 Page 31    31.0
+test.3 Page 32    32.0
+Test passed
+
+
+Testing error condition...
+
+Expected Result: Error statments followed by the "Test passed" statement.
+Error: Unix errorUnix error: File exists
+
+Test passed
+
+Error: page not pinned
+Test passed
+
+Error: buffer pool full
+Test passed
+
+
+Reading "test.1"...
+Expected Result: Pages in order.  Values matching page number.
+
+test.1 Page 1     1.0
+test.1 Page 2     2.0
+test.1 Page 3     3.0
+test.1 Page 4     4.0
+test.1 Page 5     5.0
+test.1 Page 6     6.0
+test.1 Page 7     7.0
+test.1 Page 8     8.0
+test.1 Page 9     9.0
+test.1 Page 10    10.0
+test.1 Page 11    11.0
+test.1 Page 12    12.0
+test.1 Page 13    13.0
+test.1 Page 14    14.0
+test.1 Page 15    15.0
+test.1 Page 16    16.0
+test.1 Page 17    17.0
+test.1 Page 18    18.0
+test.1 Page 19    19.0
+test.1 Page 20    20.0
+test.1 Page 21    21.0
+test.1 Page 22    22.0
+test.1 Page 23    23.0
+test.1 Page 24    24.0
+test.1 Page 25    25.0
+test.1 Page 26    26.0
+test.1 Page 27    27.0
+test.1 Page 28    28.0
+test.1 Page 29    29.0
+test.1 Page 30    30.0
+test.1 Page 31    31.0
+test.1 Page 32    32.0
+test.1 Page 33    33.0
+test.1 Page 34    34.0
+test.1 Page 35    35.0
+test.1 Page 36    36.0
+test.1 Page 37    37.0
+test.1 Page 38    38.0
+test.1 Page 39    39.0
+test.1 Page 40    40.0
+test.1 Page 41    41.0
+test.1 Page 42    42.0
+test.1 Page 43    43.0
+test.1 Page 44    44.0
+test.1 Page 45    45.0
+test.1 Page 46    46.0
+test.1 Page 47    47.0
+test.1 Page 48    48.0
+test.1 Page 49    49.0
+test.1 Page 50    50.0
+test.1 Page 51    51.0
+test.1 Page 52    52.0
+test.1 Page 53    53.0
+test.1 Page 54    54.0
+test.1 Page 55    55.0
+test.1 Page 56    56.0
+test.1 Page 57    57.0
+test.1 Page 58    58.0
+test.1 Page 59    59.0
+test.1 Page 60    60.0
+test.1 Page 61    61.0
+test.1 Page 62    62.0
+test.1 Page 63    63.0
+test.1 Page 64    64.0
+test.1 Page 65    65.0
+test.1 Page 66    66.0
+test.1 Page 67    67.0
+test.1 Page 68    68.0
+test.1 Page 69    69.0
+test.1 Page 70    70.0
+test.1 Page 71    71.0
+test.1 Page 72    72.0
+test.1 Page 73    73.0
+test.1 Page 74    74.0
+test.1 Page 75    75.0
+test.1 Page 76    76.0
+test.1 Page 77    77.0
+test.1 Page 78    78.0
+test.1 Page 79    79.0
+test.1 Page 80    80.0
+test.1 Page 81    81.0
+test.1 Page 82    82.0
+test.1 Page 83    83.0
+test.1 Page 84    84.0
+test.1 Page 85    85.0
+test.1 Page 86    86.0
+test.1 Page 87    87.0
+test.1 Page 88    88.0
+test.1 Page 89    89.0
+test.1 Page 90    90.0
+test.1 Page 91    91.0
+test.1 Page 92    92.0
+test.1 Page 93    93.0
+test.1 Page 94    94.0
+test.1 Page 95    95.0
+test.1 Page 96    96.0
+test.1 Page 97    97.0
+test.1 Page 98    98.0
+test.1 Page 99    99.0
+Test passed
+
+flushing file with pages still pinned. Should generate an error
+Error: page still pinned
+Test passed
+
+
+Passed all tests.
